@@ -11,7 +11,6 @@ Try the Xian demo contracts & **run the full unit-test suite in under a minute**
 |-----------------------|-----------------------------------------------------------|
 | Colab | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xian-network/quickstart-smart-contract-tests/blob/main/quickstart_tests.ipynb) |
 | Binder | [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/xian-network/quickstart-smart-contract-tests/HEAD?labpath=quickstart_tests.ipynb) |
-| Replit | [![Run on Replit](https://replit.com/badge?v=1)](https://replit.com/new/github/xian-network/quickstart-smart-contract-tests) |
 
 ---
 
@@ -39,7 +38,6 @@ quickstart-smart-contract-tests/
 |----------|--------|
 | **Colab** | Click the badge above, then **Runtime → Run all**. |
 | **Binder** | Click the badge & wait ~30 s; notebook opens automatically. |
-| **Replit** | Click badge, hit **Fork → Run**. |
 
 You’ll see green `pytest` dots:
 
