@@ -1,11 +1,8 @@
-run = "pytest -q"
+run = "python -m pytest -q tests/"
 entrypoint = "tests/test_con_quickstart.py"
 
 [packager]
 language = "python3"
-
-[interpreter]
-command = "python3.11"
 
 [env]
 PYTHONPATH = "."
