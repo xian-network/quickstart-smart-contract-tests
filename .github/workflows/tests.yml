@@ -1,16 +1,18 @@
 # .github/workflows/tests.yml
 name: tests
 on: [push, pull_request]
+
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python: [3.11]   # match environment.yml
+        python: ["3.11"]   # match environment.yml
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: {python-version: ${{ matrix.python }}}
+        with:
+          python-version: ${{ matrix.python }}
       - run: pip install -r requirements.txt || true
       - run: pip install git+https://github.com/xian-network/xian-contracting pytest
       - run: pytest -q
