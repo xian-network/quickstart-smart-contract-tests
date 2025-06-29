@@ -1,0 +1,9 @@
+name: xian-quickstart
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - git+https://github.com/xian-network/xian-contracting
+      - notebook  # ensures Jupyter is present
