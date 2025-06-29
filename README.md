@@ -5,6 +5,8 @@
 
 Try the Xian demo contracts & **run the full unit-test suite in under a minute**—locally *or* in the cloud.
 
+> **Requires Python 3.11** (matches the `environment.yml` and CI matrix).
+
 | One-click playgrounds | |
 |-----------------------|-----------------------------------------------------------|
 | Colab | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xian-network/quickstart-smart-contract-tests/blob/main/quickstart_tests.ipynb) |
@@ -31,7 +33,7 @@ quickstart-smart-contract-tests/
 
 ## 🚀 Quick start
 
-### 1. One-click (no install)
+### 1  One-click (no local install)
 
 | Platform | Action |
 |----------|--------|
@@ -46,12 +48,15 @@ tests/test_con_quickstart.py ...                                   [100%]
 3 passed in 0.84s
 ```
 
-### 2. Local clone
+### 2  Local clone (Python 3.11 required)
 
 ```bash
 git clone https://github.com/xian-network/quickstart-smart-contract-tests.git
 cd quickstart-smart-contract-tests
-python3 -m venv .venv && source .venv/bin/activate
+
+# create a Python 3.11 venv
+python3.11 -m venv .venv && source .venv/bin/activate
+
 pip install git+https://github.com/xian-network/xian-contracting pytest
 pytest -q
 ```
@@ -60,8 +65,8 @@ pytest -q
 
 ## ✍️ Writing your own tests
 
-1. Create a file under `tests/`, e.g. `test_my_feature.py`.
-2. Copy the `ContractingClient` setup shown in the existing test.
+1. Create a file under `tests/`, e.g. `test_my_feature.py`.  
+2. Copy the `ContractingClient` setup shown in the existing test.  
 3. `pytest -q` again—your new assertions run alongside ours.
 
 ---
